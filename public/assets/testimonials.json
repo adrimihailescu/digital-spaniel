@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "content": "Working with Digital Spaniel has been a breath of fresh air. Their approach and attitude kept me informed and included from the start. Super pleased with the end results too!",
+      "image": {
+        "alt": "A picture of a man with beard ",
+        "mobile": "/assets/testimonial_face03.jpg",
+        "nonMobile": "/assets/testimonial_03@2x.jpg"
+      },
+      "name": "Paul Simon",
+      "role": "Founder, MegaCorp"
+    },
+    {
+      "content": "Advice and support from DigiSpan was second to none. Always willing to help and offer advice and solutions. A very good and rapid understanding of our requirements was key to this.",
+      "image": {
+        "alt": "A picture of a man that winks",
+        "mobile": "/assets/testimonial_face01.jpg",
+        "nonMobile": "/assets/testimonial_face01@2x.jpg"
+      },
+      "name": "PJohnny B.Goode",
+      "role": "CEO, Getting Things Done"
+    },
+    {
+      "content": "We needed a creative and unique brand which could compete against established products. Digital Spaniel delivered in spades and we’ve seen a huge response to the product launch.",
+      "image": {
+        "alt": "A picture of a woman with a hat",
+        "mobile": "/assets/testimonial_face02.jpg",
+        "nonMobile": "/assets/testimonial_face02@2x.jpg"
+      },
+      "name": "Mary jane",
+      "role": "CEO, Design Matters"
+    }
+  ]
+}
