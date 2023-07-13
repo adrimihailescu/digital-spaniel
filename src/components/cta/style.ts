@@ -2,15 +2,14 @@ import styled from "styled-components";
 import stylesVariables from "../../constants/styles";
 
 const CTAComponent = styled.a`
-  border-bottom: 3px solid #c0345e;
   color: ${stylesVariables.color.darkGrey};
-  width: 59px;
-  height: 34px;
-  opacity: 1;
-  text-decoration: none;
+  border-bottom: 3px solid ${stylesVariables.color.red};
   font-size: 20px;
+  line-height: 27px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  text-decoration: none;
+  opacity: 1;
 `;
 
 export default CTAComponent;

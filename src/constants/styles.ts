@@ -1,6 +1,6 @@
 const stylesVariables = {
   color: {
-    title: "#C0345E",
+    red: "#C0345E",
     darkGrey: "#19293A",
     grey: "#506473",
     // heading3: "#19293A",

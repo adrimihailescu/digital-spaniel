@@ -7,13 +7,15 @@ const Heading2Style = styled.h2`
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0px;
+  line-height: 57px;
 
   span {
     color: ${stylesVariables.color.grey};
     font-size: 48px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    margin-bottom: 56px;
+    line-height: 57px;
+    margin-bottom: 50px;
   }
 `;
 
