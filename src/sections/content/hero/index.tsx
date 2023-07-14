@@ -1,15 +1,16 @@
-import React from "react";
+import React, { FC } from "react";
 import TextLayout from "../../../modules/textLayout";
 import { LayoutWrapper, LayoutItem, Image } from "../../../components";
+import { HeroProps } from "../../../types/hero";
 
-const Hero = ({ data }: any) => {
+const Hero: FC<HeroProps> = ({ left, right }) => {
   return (
     <LayoutWrapper>
       <LayoutItem>
-        <TextLayout {...data.left} />
+        <TextLayout {...left} />
       </LayoutItem>
       <LayoutItem>
-        <Image />
+        <Image {...right.heroImage} />
       </LayoutItem>
     </LayoutWrapper>
   );

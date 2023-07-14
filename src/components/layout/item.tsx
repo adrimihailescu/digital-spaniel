@@ -1,7 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
+import { ItemProps } from "../../types/layout";
 
-const Item = (props: any) => {
-  return <div>{props.children}</div>;
+const Item: FC<ItemProps> = ({ children }) => {
+  return <div>{children}</div>;
 };
 
 export default Item;

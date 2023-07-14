@@ -1,8 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import WrapperComponent from "./styles";
+import { WrapperProps } from "../../types/layout";
 
-const Wrapper = (props: any) => {
-  return <WrapperComponent>{props.children}</WrapperComponent>;
+const Wrapper: FC<WrapperProps> = ({ children }) => {
+  return <WrapperComponent>{children}</WrapperComponent>;
 };
 
 export default Wrapper;

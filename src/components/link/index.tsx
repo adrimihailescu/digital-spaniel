@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import LinkItem from "./styles";
 
 import { LinkProps } from "../../types/link";
 
-const Link = ({ variant, text, url }: LinkProps) => (
+const Link: FC<LinkProps> = ({ variant, text, url }) => (
   <LinkItem variant={variant} href={url}>
     {text}
   </LinkItem>

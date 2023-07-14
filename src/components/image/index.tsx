@@ -1,14 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import ImageComponent from "./style";
+import { ImageProps } from "../../types/image";
 
-const Image = () => {
+const Image: FC<ImageProps> = ({ alt, mobile, nonMobile }) => {
   return (
     <ImageComponent
-      srcSet="/assets/Spaniel01_gradient.jpg 480w, /assets/Spaniel01_gradient@2x.jpg 800w"
+      srcSet={`${mobile} 480w, ${nonMobile} 800w`}
       sizes="(max-width: 600px) 480px,
          800px"
-      src="/assets/Spaniel01_gradient@2x.jpg"
-      alt="Sample pic"
+      src={nonMobile}
+      alt={alt}
     />
   );
 };

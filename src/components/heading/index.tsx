@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { Heading1Styles, Heading2Style, Heading3Styles } from "./style";
 import {
   HeadingContentTypeA,
@@ -7,7 +7,7 @@ import {
   HeadingVariant,
 } from "../../types/heading";
 
-const Heading = ({ variant, content }: HeadingProps) => {
+const Heading: FC<HeadingProps> = ({ variant, content }) => {
   let text;
   switch (variant) {
     case HeadingVariant.h1:
