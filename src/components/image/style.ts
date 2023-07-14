@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import stylesVariables from "../../constants/styles";
 
 const ImageComponent = styled.img`
   display: block;

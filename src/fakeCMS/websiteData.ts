@@ -1,4 +1,8 @@
-const data = {
+import { HeadingVariant } from "../types/heading";
+import { LinkVariant } from "../types/link";
+import { WebsiteData } from "../types/websiteData";
+
+const data: WebsiteData = {
   navigation: {
     navBar: [
       {
@@ -111,16 +115,25 @@ const data = {
   content: {
     hero: {
       left: {
-        quote: "BRAND, DEV, ECOM, MARKETING",
+        quote: {
+          content: {
+            text: "BRAND, DEV, ECOM, MARKETING",
+          },
+          variant: HeadingVariant.h1,
+        },
         title: {
-          first: "We unleash",
-          second: "business potential",
+          content: {
+            first: "We unleash",
+            second: "business potential",
+          },
+          variant: HeadingVariant.h2,
         },
         content:
           "We create brand experiences which are memorable and distinct. Our experienced team create and develop brands with personality and resonance.",
         cta: {
           text: "Let’s talk",
           url: "/contact",
+          variant: LinkVariant.underlined,
         },
       },
       right: {
