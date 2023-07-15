@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Heading1Styles, Heading2Style, Heading3Styles } from "./style";
+import { Heading1Styles, Heading2Style, Heading3Styles } from "./styles";
 import {
   HeadingContentTypeA,
   HeadingContentTypeB,

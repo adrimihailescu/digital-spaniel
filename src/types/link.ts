@@ -13,6 +13,5 @@ export interface LinkProps {
 
 export interface LinkStyleProps {
   variant: LinkVariant;
-  navLink?: boolean;
-  active?: boolean;
+  className?: string | null;
 }
