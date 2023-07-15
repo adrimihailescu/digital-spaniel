@@ -53,63 +53,90 @@ const data: WebsiteData = {
           variant: LinkVariant.underlined,
         },
       },
-      right: [
-        {
-          title: "Explore",
-          items: [
-            {
-              title: "Services",
-              url: "/services",
+      right: {
+        data: [
+          {
+            title: {
+              content: {
+                text: "Explore",
+              },
+              variant: HeadingVariant.h3,
             },
-            {
-              title: "Work",
-              url: "/work",
+            items: [
+              {
+                text: "Services",
+                url: "/services",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Work",
+                url: "/work",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "About",
+                url: "/about",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Blog",
+                url: "/blog",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Careers",
+                url: "/careers",
+                variant: LinkVariant.simple,
+              },
+            ],
+          },
+          {
+            title: {
+              content: {
+                text: "Services",
+              },
+              variant: HeadingVariant.h3,
             },
-            {
-              title: "About",
-              url: "/about",
+            items: [
+              {
+                text: "Brand",
+                url: "/brand",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Development",
+                url: "/development",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Marketing",
+                url: "/marketing",
+                variant: LinkVariant.simple,
+              },
+            ],
+          },
+          {
+            title: {
+              content: {
+                text: "Questions?",
+              },
+              variant: HeadingVariant.h3,
             },
-            {
-              title: "Blog",
-              url: "/blog",
-            },
-            {
-              title: "Careers",
-              url: "/careers",
-            },
-          ],
-        },
-        {
-          title: "Services",
-          items: [
-            {
-              title: "Brand",
-              url: "/brand",
-            },
-            {
-              title: "Development",
-              url: "/development",
-            },
-            {
-              title: "Marketing",
-              url: "/marketing",
-            },
-          ],
-        },
-        {
-          title: "Questions?",
-          items: [
-            {
-              title: "Call us",
-              url: "0121 345 678",
-            },
-            {
-              title: "Email Us",
-              url: "info@digitalspaniel.co.uk",
-            },
-          ],
-        },
-      ],
+            items: [
+              {
+                text: "Call us",
+                url: "0121 345 678",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Email Us",
+                url: "info@digitalspaniel.co.uk",
+                variant: LinkVariant.simple,
+              },
+            ],
+          },
+        ],
+      },
     },
   },
   content: {
@@ -161,55 +188,80 @@ const data: WebsiteData = {
           variant: LinkVariant.underlined,
         },
       },
-      right: [
-        {
-          title: "Brand",
-          items: [
-            {
-              title: "Brand Strategy",
-              url: "/brand",
+      right: {
+        data: [
+          {
+            title: {
+              content: {
+                text: "Brand",
+              },
+              variant: HeadingVariant.h3,
             },
-            {
-              title: "Logo & Name",
-              url: "/brand",
+            items: [
+              {
+                text: "Brand Strategy",
+                url: "/brand",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Logo & Name",
+                url: "/brand",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Identity & Collateral",
+                url: "/identity",
+                variant: LinkVariant.simple,
+              },
+            ],
+          },
+          {
+            title: {
+              content: {
+                text: "Development",
+              },
+              variant: HeadingVariant.h3,
             },
-            {
-              title: "Identity & Collateral",
-              url: "/identity",
+            items: [
+              {
+                text: "eCommerce",
+                url: "/brand",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Web Development",
+                url: "/development",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Mobile Apps",
+                url: "/mobile",
+                variant: LinkVariant.simple,
+              },
+            ],
+          },
+          {
+            title: {
+              content: {
+                text: "Marketing",
+              },
+              variant: HeadingVariant.h3,
             },
-          ],
-        },
-        {
-          title: "Development",
-          items: [
-            {
-              title: "eCommerce",
-              url: "/brand",
-            },
-            {
-              title: "Web Development",
-              url: "/development",
-            },
-            {
-              title: "Mobile Apps",
-              url: "/mobile",
-            },
-          ],
-        },
-        {
-          title: "Marketing",
-          items: [
-            {
-              title: "Digital",
-              url: "/digital",
-            },
-            {
-              title: "Market Research",
-              url: "/market",
-            },
-          ],
-        },
-      ],
+            items: [
+              {
+                text: "Digital",
+                url: "/digital",
+                variant: LinkVariant.simple,
+              },
+              {
+                text: "Market Research",
+                url: "/market",
+                variant: LinkVariant.simple,
+              },
+            ],
+          },
+        ],
+      },
     },
     projects: {
       title: {

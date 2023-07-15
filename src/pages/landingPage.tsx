@@ -21,7 +21,7 @@ const LandingPage = ({
   return (
     <>
       <Hero left={hero.left} right={hero.right} />
-      <Services left={services.left} right={services.right} />
+      <Services {...services} />
       <Projects {...projects} />
       <CaseStudies {...caseStudies} />
       <About {...about} />

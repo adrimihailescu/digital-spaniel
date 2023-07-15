@@ -1,8 +1,21 @@
 import React from "react";
-import { LayoutItem } from "../../components";
+import { LinksLayoutProps } from "../../types/linksLayout";
+import { LinksLayoutComponent } from "./styles";
+import { Heading, LinkList } from "../../components";
 
-const LinksLayout = () => {
-  return <LayoutItem>LinksLayout</LayoutItem>;
+const LinksLayout = ({ data }: LinksLayoutProps) => {
+  return (
+    <LinksLayoutComponent>
+      {Object.keys(data).map((index) => {
+        return (
+          <li key={index}>
+            <Heading {...data[index as any].title} />
+            <LinkList links={data[index as any]?.items} />
+          </li>
+        );
+      })}
+    </LinksLayoutComponent>
+  );
 };
 
 export default LinksLayout;

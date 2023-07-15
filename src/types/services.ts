@@ -1,3 +1,4 @@
+import { LinksLayoutProps } from "./linksLayout";
 import { HeadingProps } from "./heading";
 import { LinkProps } from "./link";
 
@@ -7,5 +8,5 @@ export interface ServicesProps {
     content: string;
     cta: LinkProps;
   };
-  right: any;
+  right: LinksLayoutProps;
 }
