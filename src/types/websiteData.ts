@@ -1,19 +1,23 @@
+import { AboutProps } from "./about";
+import { CaseStudiesProps } from "./caseStudies";
 import { HeroProps } from "./hero";
+import { ProjectsProps } from "./projects";
 
 interface Navigation {
   navBar: any;
   footer: any;
 }
-interface Content {
+
+export interface ContentTypes {
   hero: HeroProps;
   services: any;
-  projects: any;
-  caseStudies: any;
-  about: any;
+  projects: ProjectsProps;
+  caseStudies: CaseStudiesProps;
+  about: AboutProps;
   testimonials: any;
 }
 
 export interface WebsiteData {
   navigation: Navigation;
-  content: Content;
+  content: ContentTypes;
 }

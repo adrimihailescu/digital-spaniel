@@ -3,4 +3,5 @@ export interface ItemProps {
 }
 export interface WrapperProps {
   children: React.ReactNode;
+  bg?: string;
 }

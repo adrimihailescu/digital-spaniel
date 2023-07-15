@@ -5,7 +5,7 @@
       "image": {
         "alt": "A picture of a man with beard ",
         "mobile": "/assets/testimonial_face03.jpg",
-        "nonMobile": "/assets/testimonial_03@2x.jpg"
+        "nonMobile": "/assets/testimonial_face03@2x.jpg"
       },
       "name": "Paul Simon",
       "role": "Founder, MegaCorp"

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
+import { Description, Heading } from "../../../components";
+import { CaseStudiesProps } from "../../../types/caseStudies";
 
-const CaseStudies = () => {
+const CaseStudies: FC<CaseStudiesProps> = ({ title, content }) => {
   return (
     <div>
-      <h2>Case studies</h2>
+      <Heading {...title} />
+      <Description>{content}</Description>
     </div>
   );
 };

@@ -147,14 +147,18 @@ const data: WebsiteData = {
     services: {
       left: {
         title: {
-          first: "We are",
-          second: "capable of",
+          content: {
+            first: "What are",
+            second: "we capable of",
+          },
+          variant: HeadingVariant.h2,
         },
         content:
           "By focusing on design as an enabler and putting a huge emphasis on our clients as co-producers, we create innovative, sustainable marketing that enhances brand experience and user engagement.",
         cta: {
-          label: "Our process",
+          text: "Our process",
           url: "/contact",
+          variant: LinkVariant.underlined,
         },
       },
       right: [
@@ -209,30 +213,38 @@ const data: WebsiteData = {
     },
     projects: {
       title: {
-        first: "Some of our",
-        second: "recent projects",
+        content: {
+          first: "Some of our",
+          second: "recent projects",
+        },
+        variant: HeadingVariant.h2,
       },
       categories: [
         {
+          id: 1,
           label: "All",
           value: "all",
         },
         {
+          id: 2,
           label: "Branding",
           value: "branding",
         },
         {
+          id: 3,
           label: "Web Design",
           value: "web-design",
         },
         {
+          id: 3,
           label: "Digital Marketing",
           value: "digital-marketing",
         },
       ],
       cta: {
-        label: "See all work",
-        url: "/all-work",
+        text: "See all works",
+        url: "/contact",
+        variant: LinkVariant.underlined,
       },
       items: [
         {
@@ -328,7 +340,7 @@ const data: WebsiteData = {
       ],
     },
     caseStudies: {
-      title: "Case studies",
+      title: { content: { first: "Case studies" }, variant: HeadingVariant.h2 },
       content:
         "Every project is different. We like to work collaboratively with our clients, tailoring each project to suit the needs of you and your business.",
       items: [
@@ -337,8 +349,9 @@ const data: WebsiteData = {
           content:
             "Short project description goes here To explain what the project is all about.",
           cta: {
-            label: "Read more",
+            text: "Read more",
             url: "/ideas",
+            variant: LinkVariant.underlined,
           },
           image: {
             alt: "a dashboard",
@@ -351,8 +364,9 @@ const data: WebsiteData = {
           content:
             "Short project description goes here To explain what the project is all about.",
           cta: {
-            label: "Read more",
+            text: "Read more",
             url: "/ideas",
+            variant: LinkVariant.underlined,
           },
           image: {
             alt: "a dashboard",
@@ -365,8 +379,9 @@ const data: WebsiteData = {
           content:
             "Short project description goes here To explain what the project is all about.",
           cta: {
-            label: "Read more",
+            text: "Read more",
             url: "/ideas",
+            variant: LinkVariant.underlined,
           },
           image: {
             alt: "a dashboard",
@@ -378,58 +393,54 @@ const data: WebsiteData = {
     },
     about: {
       title: {
-        first: "What are ",
-        second: "we all about",
+        content: {
+          first: "What are",
+          second: "we all about",
+        },
+        variant: HeadingVariant.h2,
       },
       callToActions: [
         {
-          cta: {
-            label: "About",
-            url: "/about",
-          },
+          text: "About",
+          url: "/about",
+          variant: LinkVariant.underlined,
         },
         {
-          cta: {
-            label: "Careers",
-            url: "/careers",
-          },
+          text: "Careers",
+          url: "/careers",
+          variant: LinkVariant.underlined,
         },
       ],
       images: [
         {
-          image: {
-            alt: "People sitting at a table",
-            mobile: "/assets/office01.jpg",
-            nonMobile: "/assets/office01@2x.jpg",
-          },
+          alt: "People sitting at a table",
+          mobile: "/assets/office01.jpg",
+          nonMobile: "/assets/office01@2x.jpg",
         },
         {
-          image: {
-            alt: "People sitting at a table",
-            mobile: "/assets/office03.jpg",
-            nonMobile: "/assets/office03@2x.jpg",
-          },
+          alt: "People sitting at a table",
+          mobile: "/assets/office03.jpg",
+          nonMobile: "/assets/office03@2x.jpg",
         },
         {
-          image: {
-            alt: "A hallway in an office",
-            mobile: "/assets/office02.jpg",
-            nonMobile: "/assets/office02@2x.jpg",
-          },
+          alt: "A hallway in an office",
+          mobile: "/assets/office02.jpg",
+          nonMobile: "/assets/office02@2x.jpg",
         },
         {
-          image: {
-            alt: "A picture of a plant, a desk and a wall ",
-            mobile: "/assets/office04.jpg",
-            nonMobile: "/assets/office04@2x.jpg",
-          },
+          alt: "A picture of a plant, a desk and a wall ",
+          mobile: "/assets/office04.jpg",
+          nonMobile: "/assets/office04@2x.jpg",
         },
       ],
     },
     testimonials: {
       title: {
-        first: "Kind words",
-        second: "from our clients",
+        content: {
+          first: "Kind words",
+          second: "from our clients",
+        },
+        variant: HeadingVariant.h2,
       },
       url: "/testimonials.json",
     },

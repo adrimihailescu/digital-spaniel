@@ -10,19 +10,26 @@ import {
   NavBar,
   Footer,
 } from "../sections";
+import { ContentTypes } from "../types/websiteData";
 
-import websiteData from "../fakeCMS/websiteData";
-import Card from "../components/card";
+// import Card from "../components/card";
 
-const LandingPage = () => {
+const LandingPage = ({
+  hero,
+  services,
+  about,
+  caseStudies,
+  projects,
+  testimonials,
+}: ContentTypes) => {
   return (
     <>
       <NavBar />
-      <Hero
-        left={websiteData.content.hero.left}
-        right={websiteData.content.hero.right}
-      />
-      <Card
+      <Hero left={hero.left} right={hero.right} />
+      <Services left={services.left} right={services.right} />
+      <Projects {...projects} />
+      <CaseStudies {...caseStudies} />
+      {/* <Card
         {...{
           content:
             "Working with Digital Spaniel has been a breath of fresh air. Their approach and attitude kept me informed and included from the start. Super pleased with the end results too!",
@@ -34,12 +41,9 @@ const LandingPage = () => {
           name: "Paul Simon",
           role: "Founder, MegaCorp",
         }}
-      />
-      <About />
-      <CaseStudies />
-      <Projects />
-      <Services />
-      <Testimonials />
+      /> */}
+      <About {...about} />
+      <Testimonials {...testimonials} />
       <Footer />
     </>
   );

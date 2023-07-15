@@ -1,12 +1,13 @@
 import React from "react";
 import LandingPage from "./pages/landingPage";
 import GlobalStyles from "./styles";
+import websiteData from "./fakeCMS/websiteData";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <LandingPage />
+      <LandingPage {...websiteData.content} />
     </>
   );
 }

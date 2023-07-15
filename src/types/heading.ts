@@ -1,6 +1,6 @@
 export interface HeadingContentTypeA {
   first: string;
-  second: string;
+  second?: string;
 }
 
 export interface HeadingContentTypeB {
