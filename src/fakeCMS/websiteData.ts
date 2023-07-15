@@ -4,112 +4,112 @@ import { WebsiteData } from "../types/websiteData";
 
 const data: WebsiteData = {
   navigation: {
-    navBar: [
-      {
-        logo: {
-          title: "Logo",
-          url: "/home",
-        },
+    navBar: {
+      logo: {
+        alt: "Logo image with a dog",
+        src: "assets/logo.jpg",
+        href: "#home",
       },
-      {
-        Services: {
-          title: "Services",
-          url: "/services",
+      links: [
+        {
+          text: "Services",
+          url: "#services",
+          variant: LinkVariant.underlined,
         },
-      },
-      {
-        work: {
-          title: "Work",
-          url: "/work",
+        {
+          text: "Work",
+          url: "#work",
+          variant: LinkVariant.underlined,
         },
-      },
-      {
-        about: {
-          title: "About",
-          url: "/about",
+        {
+          text: "About",
+          url: "#about",
+          variant: LinkVariant.underlined,
         },
-      },
-      {
-        blog: {
-          title: "Blog",
-          url: "/blog",
+        {
+          text: "Blog",
+          url: "#blog",
+          variant: LinkVariant.underlined,
         },
-      },
-      {
-        contact: {
-          title: "Contact",
-          url: "/contact",
+        {
+          text: "Contact",
+          url: "#contact",
+          variant: LinkVariant.underlined,
         },
-      },
-    ],
+      ],
+    },
     footer: {
       left: {
         title: {
-          first: "We’re a brands",
-          second: "best friend",
+          content: {
+            first: "We’re a brands",
+            second: "best friend",
+          },
+          variant: HeadingVariant.h2,
         },
         cta: {
           text: "Let’s talk",
           url: "/contact",
+          variant: LinkVariant.underlined,
         },
-        right: [
-          {
-            title: "Explore",
-            items: [
-              {
-                title: "Services",
-                url: "/services",
-              },
-              {
-                title: "Work",
-                url: "/work",
-              },
-              {
-                title: "About",
-                url: "/about",
-              },
-              {
-                title: "Blog",
-                url: "/blog",
-              },
-              {
-                title: "Careers",
-                url: "/careers",
-              },
-            ],
-          },
-          {
-            title: "Services",
-            items: [
-              {
-                title: "Brand",
-                url: "/brand",
-              },
-              {
-                title: "Development",
-                url: "/development",
-              },
-              {
-                title: "Marketing",
-                url: "/marketing",
-              },
-            ],
-          },
-          {
-            title: "Questions?",
-            items: [
-              {
-                title: "Call us",
-                url: "0121 345 678",
-              },
-              {
-                title: "Email Us",
-                url: "info@digitalspaniel.co.uk",
-              },
-            ],
-          },
-        ],
       },
+      right: [
+        {
+          title: "Explore",
+          items: [
+            {
+              title: "Services",
+              url: "/services",
+            },
+            {
+              title: "Work",
+              url: "/work",
+            },
+            {
+              title: "About",
+              url: "/about",
+            },
+            {
+              title: "Blog",
+              url: "/blog",
+            },
+            {
+              title: "Careers",
+              url: "/careers",
+            },
+          ],
+        },
+        {
+          title: "Services",
+          items: [
+            {
+              title: "Brand",
+              url: "/brand",
+            },
+            {
+              title: "Development",
+              url: "/development",
+            },
+            {
+              title: "Marketing",
+              url: "/marketing",
+            },
+          ],
+        },
+        {
+          title: "Questions?",
+          items: [
+            {
+              title: "Call us",
+              url: "0121 345 678",
+            },
+            {
+              title: "Email Us",
+              url: "info@digitalspaniel.co.uk",
+            },
+          ],
+        },
+      ],
     },
   },
   content: {

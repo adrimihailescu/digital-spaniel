@@ -1,20 +1,24 @@
 import { AboutProps } from "./about";
 import { CaseStudiesProps } from "./caseStudies";
+import { FooterProps } from "./footer";
 import { HeroProps } from "./hero";
+import { NavBarProps } from "./navigation";
 import { ProjectsProps } from "./projects";
+import { ServicesProps } from "./services";
+import { TestimonialsProps } from "./testimonials";
 
 interface Navigation {
-  navBar: any;
-  footer: any;
+  navBar: NavBarProps;
+  footer: FooterProps;
 }
 
 export interface ContentTypes {
   hero: HeroProps;
-  services: any;
+  services: ServicesProps;
   projects: ProjectsProps;
   caseStudies: CaseStudiesProps;
   about: AboutProps;
-  testimonials: any;
+  testimonials: TestimonialsProps;
 }
 
 export interface WebsiteData {
