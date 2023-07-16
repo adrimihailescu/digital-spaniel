@@ -4,14 +4,17 @@ import { TextLayout, LinksLayout } from "../../../modules";
 import { ServicesProps } from "../../../types/services";
 import stylesVariables from "../../../constants/styles";
 
-const Services: FC<ServicesProps> = ({ left, right }) => {
+const Services: FC<ServicesProps> = ({
+  left: { variant: variantLeft, ...restLeft },
+  right: { variant: variantRight, ...restRight },
+}) => {
   return (
     <LayoutWrapper bg={stylesVariables.color.grey10}>
-      <LayoutItem>
-        <TextLayout {...left} />
+      <LayoutItem variant={variantLeft}>
+        <TextLayout {...restLeft} />
       </LayoutItem>
-      <LayoutItem>
-        <LinksLayout {...right} />
+      <LayoutItem variant={variantRight}>
+        <LinksLayout {...restRight} />
       </LayoutItem>
     </LayoutWrapper>
   );

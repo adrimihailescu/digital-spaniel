@@ -18,7 +18,7 @@ const Testimonials: FC<TestimonialsProps> = ({ title, url }) => {
   }, []);
 
   return (
-    <div>
+    <section>
       <Heading {...title} />
       <ul>
         {cardData &&
@@ -28,7 +28,7 @@ const Testimonials: FC<TestimonialsProps> = ({ title, url }) => {
             </li>
           ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

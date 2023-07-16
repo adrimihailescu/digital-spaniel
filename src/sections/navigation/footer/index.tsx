@@ -2,18 +2,26 @@ import React, { FC } from "react";
 import { FooterProps } from "../../../types/footer";
 import { LayoutItem, LayoutWrapper } from "../../../components";
 import { LinksLayout, TextLayout } from "../../../modules";
-import stylesVariables from "../../../constants/styles";
+import { FooterComponent, CopyrightAndSocialComponent } from "./styles";
 
-const Footer: FC<FooterProps> = ({ left, right }) => {
+const Footer: FC<FooterProps> = ({
+  left: { variant: variantLeft, ...restLeft },
+  right: { variant: variantRight, ...restRight },
+}) => {
   return (
-    <LayoutWrapper bg={stylesVariables.color.grey10}>
-      <LayoutItem>
-        <TextLayout {...left} />
-      </LayoutItem>
-      <LayoutItem>
-        <LinksLayout {...right} />
-      </LayoutItem>
-    </LayoutWrapper>
+    <FooterComponent>
+      <LayoutWrapper>
+        <LayoutItem variant={variantLeft}>
+          <TextLayout {...restLeft} />
+        </LayoutItem>
+        <LayoutItem variant={variantRight}>
+          <LinksLayout {...restRight} />
+        </LayoutItem>
+      </LayoutWrapper>
+      <CopyrightAndSocialComponent>
+        copyright goes here + links with images
+      </CopyrightAndSocialComponent>
+    </FooterComponent>
   );
 };
 

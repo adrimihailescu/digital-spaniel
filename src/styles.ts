@@ -44,6 +44,14 @@ textarea,
 select {
   font: inherit;
 }
+html{
+  font-size: 10px;
+  
+  @media only screen and (min-width: 1100px)  {
+    font-size: 16px;
+  }
+
+}
 `;
 
 export default GlobalStyle;

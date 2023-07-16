@@ -6,8 +6,6 @@ export const LinksLayoutComponent = styled.ul`
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 128px;
-  row-gap: 63px;
 
   li {
     list-style: none;

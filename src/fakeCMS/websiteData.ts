@@ -1,4 +1,5 @@
 import { HeadingVariant } from "../types/heading";
+import { LayoutItemVariant } from "../types/layout";
 import { LinkVariant } from "../types/link";
 import { WebsiteData } from "../types/websiteData";
 
@@ -40,6 +41,7 @@ const data: WebsiteData = {
     },
     footer: {
       left: {
+        variant: LayoutItemVariant.textLayoutFooter,
         title: {
           content: {
             first: "We’re a brands",
@@ -54,6 +56,7 @@ const data: WebsiteData = {
         },
       },
       right: {
+        variant: LayoutItemVariant.linksLayoutFooter,
         data: [
           {
             title: {
@@ -142,6 +145,7 @@ const data: WebsiteData = {
   content: {
     hero: {
       left: {
+        variant: LayoutItemVariant.textLayout,
         quote: {
           content: {
             text: "BRAND, DEV, ECOM, MARKETING",
@@ -164,6 +168,7 @@ const data: WebsiteData = {
         },
       },
       right: {
+        variant: LayoutItemVariant.heroImageLayout,
         heroImage: {
           alt: "A Spaniel dog",
           mobile: "/assets/Spaniel01_gradient.jpg",
@@ -173,6 +178,7 @@ const data: WebsiteData = {
     },
     services: {
       left: {
+        variant: LayoutItemVariant.textLayout,
         title: {
           content: {
             first: "What are",
@@ -189,6 +195,7 @@ const data: WebsiteData = {
         },
       },
       right: {
+        variant: LayoutItemVariant.linksLayout,
         data: [
           {
             title: {

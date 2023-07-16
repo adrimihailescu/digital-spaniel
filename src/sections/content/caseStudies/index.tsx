@@ -4,10 +4,10 @@ import { CaseStudiesProps } from "../../../types/caseStudies";
 
 const CaseStudies: FC<CaseStudiesProps> = ({ title, content }) => {
   return (
-    <div>
+    <section>
       <Heading {...title} />
       <Description>{content}</Description>
-    </div>
+    </section>
   );
 };
 

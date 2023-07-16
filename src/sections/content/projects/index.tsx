@@ -4,10 +4,10 @@ import { ProjectsProps } from "../../../types/projects";
 
 const Projects: FC<ProjectsProps> = ({ title, cta, categories }) => {
   return (
-    <>
+    <section>
       <Heading {...title} />
       <Link {...cta} />
-    </>
+    </section>
   );
 };
 
