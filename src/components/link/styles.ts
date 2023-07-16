@@ -22,11 +22,26 @@ const handleVariants = ({ variant }: LinkStyleProps) => {
         }
 
         &.underlinedNav {
-          color: ${stylesVariables.color.white};
-          border-bottom: 3px solid "transparent";
+          border-bottom: 3px solid transparent;
+          color: ${stylesVariables.color.grey140};
+          font-size: 30px;
+          line-height: 37px;
 
           &.isActive {
-            border-bottom: 3px solid ${stylesVariables.color.white};
+            border-bottom: 3px solid ${stylesVariables.color.red10};
+          }
+
+          @media only screen and (min-width: 800px) {
+            font-size: 20px;
+            line-height: 27px;
+          }
+
+          @media only screen and (min-width: 1350px) {
+            color: ${stylesVariables.color.white};
+
+            &.isActive {
+              border-bottom: 3px solid ${stylesVariables.color.white};
+            }
           }
         }
       `;

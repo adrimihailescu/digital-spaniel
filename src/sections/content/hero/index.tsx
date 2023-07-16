@@ -8,7 +8,7 @@ const Hero: FC<HeroProps> = ({
   right: { variant: variantRight, heroImage },
 }) => {
   return (
-    <LayoutWrapper>
+    <LayoutWrapper heroVariant id="home">
       <LayoutItem variant={variantLeft}>
         <TextLayout {...restLeft} />
       </LayoutItem>

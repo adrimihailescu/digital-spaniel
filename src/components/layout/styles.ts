@@ -10,7 +10,15 @@ export const WrapperComponent = styled.section<WrapperProps>`
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  background-color: ${(props) => props.bg};
+  background-color: ${({ bg }) => bg};
+
+  &.heroVariant {
+    padding-top: 80px;
+
+    @media only screen and (min-width: 1350px) {
+      padding-top: 0;
+    }
+  }
 `;
 
 export const WrapperItemComponent = styled.div<LayoutItemStyleProps>`

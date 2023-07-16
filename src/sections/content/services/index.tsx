@@ -9,7 +9,7 @@ const Services: FC<ServicesProps> = ({
   right: { variant: variantRight, ...restRight },
 }) => {
   return (
-    <LayoutWrapper bg={stylesVariables.color.grey10}>
+    <LayoutWrapper bg={stylesVariables.color.grey10} id="services">
       <LayoutItem variant={variantLeft}>
         <TextLayout {...restLeft} />
       </LayoutItem>

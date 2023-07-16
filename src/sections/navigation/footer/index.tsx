@@ -10,7 +10,7 @@ const Footer: FC<FooterProps> = ({
 }) => {
   return (
     <FooterComponent>
-      <LayoutWrapper>
+      <LayoutWrapper id="contact">
         <LayoutItem variant={variantLeft}>
           <TextLayout {...restLeft} />
         </LayoutItem>

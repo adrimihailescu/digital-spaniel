@@ -22,9 +22,6 @@ ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
-html:focus-within {
-  scroll-behavior: smooth;
-}
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -45,6 +42,7 @@ select {
   font: inherit;
 }
 html{
+  scroll-behavior: smooth;
   font-size: 10px;
   
   @media only screen and (min-width: 1100px)  {

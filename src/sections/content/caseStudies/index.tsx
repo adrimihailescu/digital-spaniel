@@ -4,7 +4,7 @@ import { CaseStudiesProps } from "../../../types/caseStudies";
 
 const CaseStudies: FC<CaseStudiesProps> = ({ title, content }) => {
   return (
-    <section>
+    <section id="blog">
       <Heading {...title} />
       <Description>{content}</Description>
     </section>

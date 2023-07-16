@@ -18,4 +18,6 @@ export interface LayoutItemStyleProps {
 export interface WrapperProps {
   children: React.ReactNode;
   bg?: string;
+  heroVariant?: boolean;
+  id: string;
 }

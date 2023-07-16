@@ -18,7 +18,7 @@ const Testimonials: FC<TestimonialsProps> = ({ title, url }) => {
   }, []);
 
   return (
-    <section>
+    <section id="testimonials">
       <Heading {...title} />
       <ul>
         {cardData &&

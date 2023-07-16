@@ -4,7 +4,7 @@ import { ProjectsProps } from "../../../types/projects";
 
 const Projects: FC<ProjectsProps> = ({ title, cta, categories }) => {
   return (
-    <section>
+    <section id="work">
       <Heading {...title} />
       <Link {...cta} />
     </section>

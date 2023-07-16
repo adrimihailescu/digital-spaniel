@@ -8,7 +8,7 @@ export interface LinkProps {
   text: string;
   url: string;
   navLink?: boolean;
-  active?: boolean;
+  className?: string;
 }
 
 export interface LinkStyleProps {

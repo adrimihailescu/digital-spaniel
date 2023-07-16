@@ -4,7 +4,7 @@ import { AboutProps } from "../../../types/about";
 
 const About: FC<AboutProps> = ({ title, callToActions, images }) => {
   return (
-    <section>
+    <section id="about">
       <Heading {...title} />
       <ul>
         {callToActions.map((cta, index) => (
