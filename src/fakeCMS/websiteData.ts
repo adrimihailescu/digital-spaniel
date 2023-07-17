@@ -482,14 +482,14 @@ const data: WebsiteData = {
           nonMobile: "/assets/office03@2x.jpg",
         },
         {
-          alt: "A hallway in an office",
-          mobile: "/assets/office02.jpg",
-          nonMobile: "/assets/office02@2x.jpg",
-        },
-        {
           alt: "A picture of a plant, a desk and a wall ",
           mobile: "/assets/office04.jpg",
           nonMobile: "/assets/office04@2x.jpg",
+        },
+        {
+          alt: "A hallway in an office",
+          mobile: "/assets/office02.jpg",
+          nonMobile: "/assets/office02@2x.jpg",
         },
       ],
     },

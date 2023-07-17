@@ -75,6 +75,11 @@ export const NavBarComponent = styled.nav<NavBarComponentStyles>`
       height: auto;
       width: auto;
 
+      li:not(.burger-button) {
+        opacity: 1;
+        visibility: visible;
+      }
+
       .burger-button {
         display: none;
       }
@@ -140,6 +145,10 @@ export const NavBarComponent = styled.nav<NavBarComponentStyles>`
 
         a {
           color: ${stylesVariables.color.white};
+
+          &:before {
+            background: ${stylesVariables.color.white};
+          }
         }
       }
     }
