@@ -19,7 +19,7 @@ export const NavBarComponent = styled.nav<NavBarComponentStyles>`
   width: 100%;
   background-color: ${stylesVariables.color.white};
   padding: 16px 40px 14px 50px;
-  z-index: 1;
+  z-index: 99;
   top: 0;
   left: 0;
   transition: height 100ms ${easing.easeOutExpo},

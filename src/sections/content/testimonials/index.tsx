@@ -1,34 +1,59 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, A11y } from "swiper";
+import { useAppDispatch, useAppSelector } from "../../../hooks/reduxHooks";
 import { Heading } from "../../../components";
-import { TestimonialsProps } from "../../../types/testimonials";
 import Card from "../../../components/card";
+import { TestimonialsSectionComponent } from "./styles";
+
 import { CardProps } from "../../../types/card";
+import { TestimonialsProps } from "../../../types/testimonials";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import { getCardsData } from "../../../reduxStore/testimonialsSlice";
+
+const breakPointsConfig = {
+  640: {
+    slidesPerView: 1,
+  },
+  1024: {
+    slidesPerView: 2,
+  },
+  1600: {
+    slidesPerView: 3,
+  },
+};
 
 const Testimonials: FC<TestimonialsProps> = ({ title, url }) => {
-  const [cardData, setCardData] = useState([]);
-
-  const getData = async () => {
-    const response = await fetch("/assets/testimonials.json");
-    const { data } = await response.json();
-    setCardData(data);
-  };
+  const dispatch = useAppDispatch();
+  const { cardsData } = useAppSelector((state) => state.testimonials);
 
   useEffect(() => {
-    getData();
+    dispatch(getCardsData(url));
   }, []);
 
   return (
-    <section id="testimonials">
-      <Heading {...title} />
-      <ul>
-        {cardData &&
-          cardData.map((card, index) => (
-            <li key={index}>
+    <TestimonialsSectionComponent id="testimonials">
+      <div className="title">
+        <Heading {...title} />
+      </div>
+      <Swiper
+        modules={[Pagination, A11y]}
+        spaceBetween={0}
+        pagination={{ clickable: true }}
+        centeredSlides
+        initialSlide={1}
+        breakpoints={breakPointsConfig}
+      >
+        {cardsData &&
+          cardsData.map((card, index) => (
+            <SwiperSlide key={index}>
               <Card {...(card as CardProps)} />
-            </li>
+            </SwiperSlide>
           ))}
-      </ul>
-    </section>
+      </Swiper>
+    </TestimonialsSectionComponent>
   );
 };
 

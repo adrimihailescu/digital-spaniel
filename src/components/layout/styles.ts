@@ -56,6 +56,7 @@ export const WrapperItemComponent = styled.div<LayoutItemStyleProps>`
 
     a {
       margin-top: auto;
+      margin-left: 15px;
     }
 
     @media only screen and (min-width: 1350px) {

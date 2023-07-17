@@ -501,7 +501,7 @@ const data: WebsiteData = {
         },
         variant: HeadingVariant.h2,
       },
-      url: "/testimonials.json",
+      url: "/assets/testimonials.json",
     },
   },
 };
