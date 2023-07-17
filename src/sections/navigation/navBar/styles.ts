@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import stylesVariables from "../../../constants/styles";
 
-interface NavBarComponentStyles {
+interface HeaderComponentStyles {
   className: string;
 }
 
@@ -10,7 +10,7 @@ const easing = {
   easeInExpo: "cubic-bezier(0.7, 0, 0.84, 0)",
 };
 
-export const NavBarComponent = styled.nav<NavBarComponentStyles>`
+export const HeaderComponent = styled.header<HeaderComponentStyles>`
   position: fixed;
   display: flex;
   justify-content: space-between;
