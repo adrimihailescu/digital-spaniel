@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y } from "swiper";
 import { useAppDispatch, useAppSelector } from "../../../hooks/reduxHooks";
 import { Heading } from "../../../components";
-import Card from "../../../components/card";
+import { Card } from "../../../components";
 import { TestimonialsSectionComponent } from "./styles";
 
 import { CardProps } from "../../../types/card";

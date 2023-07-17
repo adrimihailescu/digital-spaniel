@@ -90,9 +90,6 @@ export const TestimonialsSectionComponent = styled.section`
     }
   }
 
-  @media only screen and (min-width: 1350px) {
-  }
-
   @media only screen and (min-width: 1920px) {
     padding: 128px 0 128px;
 
