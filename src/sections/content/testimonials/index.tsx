@@ -9,8 +9,6 @@ import { TestimonialsSectionComponent } from "./styles";
 import { CardProps } from "../../../types/card";
 import { TestimonialsProps } from "../../../types/testimonials";
 
-import "swiper/css";
-import "swiper/css/pagination";
 import { getCardsData } from "../../../reduxStore/testimonialsSlice";
 
 const breakPointsConfig = {

@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Digital spaniel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Application built with CRA, Typescript, Redux and Styled components
 
-## Available Scripts
+## Project setup
 
-In the project directory, you can run:
+1. Clone the Github repository `git clone https://github.com/adrimihailescu/digital-spaniel`.
+2. Run `npm install` to install dependencies
 
-### `npm start`
+You should now be able to run the application in a development server with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npm start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Description
 
-### `npm test`
+1. **DATA**: Data for the entire website is coming from the **fakeCMS** where we have an object passed to the Landing page, then passed down to components through props.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **REDUX**: Redux RTK used for fetching the data for Card component in Testimonials section, accessed from a JSON file in the public folder available in the **redux folder**.
 
-### `npm run build`
+3. **TYPES**: There is a schema for the object fed to the entire application and types for each section, available in the **types folder**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **DESIGN**: The design is trying to reflect most of the specification from the provided XD link, with small adjustments to fulfil the requirements of the technical task.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Technical task specifications fulfilled:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+➔ The top navigation section is sticky but also hide when the user scrolls down
+and reappear if the user scrolls up
+➔ The "Services" menu item shows the hover/active state of each menu item for the
+header
+➔ The header area is full screen on desktop and collapses to a hamburger style
+menu on tablet and mobile viewport which slides in/out of view when clicked/tapped, taking over the screen
+➔ For links (e.g. "Lets talk") there is a hover animation, text changes color and the background is filled with the underline color
+➔ "Some of our recent projects" shows a tabbed slider action. (Image hover state shown on "Make Ideas Happen" project. - **missing**)
+➔ "Case Studies" slider section shows an active Case Study and two further Case Studies
+to the left and right (which are accessed using the arrow buttons - **missing**)
+➔ "What are we all about?" section shows a masonry gallery
+➔ The testimonial slider section shows the active slide, with further slides accessed using the circle buttons
+➔ No tablet or mobile visuals were provided, so stacked and reduced content where appropriate inline with best practice

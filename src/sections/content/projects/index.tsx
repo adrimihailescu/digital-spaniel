@@ -11,9 +11,6 @@ import {
   ProjectsProps,
 } from "../../../types/projects";
 
-import "swiper/css";
-import "swiper/css/grid";
-
 const Projects: FC<ProjectsProps> = ({ title, cta, categories, items }) => {
   const [activeCategoryItems, setActiveCategoryItems] =
     useState<ProjectProps[]>(items);

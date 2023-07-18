@@ -7,9 +7,6 @@ import { Image } from "../../../components";
 
 import { CaseStudiesProps } from "../../../types/caseStudies";
 
-import "swiper/css";
-import "swiper/css/navigation";
-
 const CaseStudies: FC<CaseStudiesProps> = ({ title, content, items }) => {
   return (
     <CaseStudiesSectionComponent id="blog">
