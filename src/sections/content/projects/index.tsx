@@ -56,7 +56,6 @@ const Projects: FC<ProjectsProps> = ({ title, cta, categories, items }) => {
   };
 
   const slideNextHandler = () => {
-    console.log(swiperRef);
     swiperRef.current?.slideNext();
     if (swiperRef.current?.isEnd) {
       setSwiperDisabledControls({
@@ -117,10 +116,10 @@ const Projects: FC<ProjectsProps> = ({ title, cta, categories, items }) => {
         modules={[Grid, A11y]}
         navigation={true}
       >
-        {Object.keys(activeCategoryItems).map((index) => {
+        {Object.keys(activeCategoryItems).map((_, index) => {
           return (
             <SwiperSlide key={index}>
-              {<Image {...activeCategoryItems[index as any].image} />}
+              {<Image {...activeCategoryItems[index].image} />}
             </SwiperSlide>
           );
         })}

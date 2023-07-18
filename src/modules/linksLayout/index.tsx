@@ -1,16 +1,16 @@
-import React from "react";
+import React, { FC } from "react";
 import { LinksLayoutProps } from "../../types/linksLayout";
 import { LinksLayoutComponent } from "./styles";
 import { Heading, LinkList } from "../../components";
 
-const LinksLayout = ({ data }: LinksLayoutProps) => {
+const LinksLayout: FC<LinksLayoutProps> = ({ data }) => {
   return (
     <LinksLayoutComponent>
-      {Object.keys(data).map((index) => {
+      {Object.keys(data).map((_, index) => {
         return (
           <li key={index}>
-            <Heading {...data[index as any].title} />
-            <LinkList links={data[index as any]?.items} />
+            <Heading {...data[index].title} />
+            <LinkList links={data[index]?.items} />
           </li>
         );
       })}

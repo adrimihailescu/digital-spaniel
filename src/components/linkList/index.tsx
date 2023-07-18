@@ -1,11 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import { LinkListComponent } from "./styles";
 import Link from "../link";
+import { LinkListProps } from "../../types/link";
 
-const LinkList = ({ links }: any) => {
+const LinkList: FC<LinkListProps> = ({ links }) => {
   return (
     <LinkListComponent>
-      {Object.keys(links).map((index) => (
+      {Object.keys(links).map((_, index) => (
         <li key={index}>
           <Link {...links[index]} />
         </li>

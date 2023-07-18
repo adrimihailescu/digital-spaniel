@@ -31,6 +31,7 @@ const Testimonials: FC<TestimonialsProps> = ({ title, url }) => {
 
   useEffect(() => {
     dispatch(getCardsData(url));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

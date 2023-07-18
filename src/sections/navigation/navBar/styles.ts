@@ -135,7 +135,7 @@ export const HeaderComponent = styled.header<HeaderComponentStyles>`
       transform: translateY(0);
 
       a {
-        color: ${stylesVariables.color.grey140};
+        color: ${stylesVariables.color.grey50};
         transition: color 250ms ${easing.easeInExpo};
       }
 
@@ -161,7 +161,7 @@ export const HeaderComponent = styled.header<HeaderComponentStyles>`
         color 250ms ${easing.easeInExpo}, box-shadow 250ms ${easing.easeInExpo};
 
       a {
-        color: ${stylesVariables.color.grey140};
+        color: ${stylesVariables.color.grey50};
         transition: color 250ms ${easing.easeInExpo};
       }
     }

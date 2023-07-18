@@ -21,12 +21,12 @@ export const TestimonialsSectionComponent = styled.section`
         &-active {
           transition: all 250ms ease-in-out;
           & > * {
-            background-color: ${stylesVariables.color.grey140};
-            box-shadow: 0px 0px 20px ${stylesVariables.color.grey140};
+            background-color: ${stylesVariables.color.grey50};
+            box-shadow: 0px 0px 20px ${stylesVariables.color.grey50};
             .quotes {
               &:before,
               &:after {
-                color: ${stylesVariables.color.grey100};
+                color: ${stylesVariables.color.grey40};
               }
             }
 
@@ -57,12 +57,12 @@ export const TestimonialsSectionComponent = styled.section`
       }
 
       &-active {
-        background-color: ${stylesVariables.color.grey140};
+        background-color: ${stylesVariables.color.grey50};
         width: 34px;
         height: 34px;
 
         &:hover {
-          background-color: ${stylesVariables.color.grey140};
+          background-color: ${stylesVariables.color.grey50};
           cursor: default;
         }
       }

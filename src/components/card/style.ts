@@ -2,7 +2,7 @@ import styled from "styled-components";
 import stylesVariables from "../../constants/styles";
 
 const CardItem = styled.div`
-  background: ${stylesVariables.color.grey20};
+  background: ${stylesVariables.color.grey};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@ const CardItem = styled.div`
 
   blockquote {
     position: relative;
-    color: ${stylesVariables.color.grey90};
+    color: ${stylesVariables.color.grey30};
     font-family: "Open Sans", sans-serif;
     font-style: italic;
     font-variant: normal;
@@ -34,7 +34,7 @@ const CardItem = styled.div`
         content: close-quote;
         font-size: 154px;
         position: absolute;
-        color: ${stylesVariables.color.grey30};
+        color: ${stylesVariables.color.grey20};
         right: 10px;
         bottom: -42px;
       }
@@ -42,7 +42,7 @@ const CardItem = styled.div`
         content: open-quote;
         font-size: 154px;
         position: absolute;
-        color: ${stylesVariables.color.grey30};
+        color: ${stylesVariables.color.grey20};
         left: -32px;
         top: 5px;
       }
@@ -55,9 +55,9 @@ const CardItem = styled.div`
     max-width: 96px;
   }
 
-  .title {
+  .card-title {
     font-family: "Open Sans", sans-serif;
-    color: ${stylesVariables.color.grey140};
+    color: ${stylesVariables.color.grey50};
     font-weight: normal;
     font-style: normal;
     font-weight: bold;
@@ -67,7 +67,7 @@ const CardItem = styled.div`
   }
 
   .role {
-    color: ${stylesVariables.color.grey140};
+    color: ${stylesVariables.color.grey50};
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-variant: normal;

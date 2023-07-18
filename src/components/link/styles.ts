@@ -12,7 +12,7 @@ const handleVariants = ({ variant }: LinkStyleProps) => {
       return css`
         font-size: 21px;
         line-height: 58px;
-        color: ${stylesVariables.color.grey90};
+        color: ${stylesVariables.color.grey30};
         letter-spacing: 0.53px;
       `;
     case variant === LinkVariant.underlined:
@@ -22,7 +22,7 @@ const handleVariants = ({ variant }: LinkStyleProps) => {
         z-index: 1;
 
         &.underlinedCta {
-          color: ${stylesVariables.color.grey140};
+          color: ${stylesVariables.color.grey50};
 
           &:before {
             content: "";
@@ -47,7 +47,7 @@ const handleVariants = ({ variant }: LinkStyleProps) => {
         }
 
         &.underlinedNav {
-          color: ${stylesVariables.color.grey140};
+          color: ${stylesVariables.color.grey50};
           font-size: 30px;
           line-height: 37px;
           transition: all 0.3s ease-in-out;
@@ -86,7 +86,7 @@ const handleVariants = ({ variant }: LinkStyleProps) => {
             line-height: 27px;
 
             &.isActive {
-              color: ${stylesVariables.color.grey140};
+              color: ${stylesVariables.color.grey50};
 
               &:before {
                 width: 100%;

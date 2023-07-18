@@ -15,3 +15,7 @@ export interface LinkStyleProps {
   variant: LinkVariant;
   className?: string | null;
 }
+
+export interface LinkListProps {
+  links: { [index: number]: LinkProps };
+}

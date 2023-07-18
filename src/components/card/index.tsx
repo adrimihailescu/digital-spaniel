@@ -11,7 +11,7 @@ const Card: FC<CardProps> = ({ content, image, name, role }) => {
         <span className="content">{content}</span>
       </blockquote>
       <Image {...image} />
-      <p className="title">{name}</p>
+      <p className="card-title">{name}</p>
       <p className="role">{role}</p>
     </CardItem>
   );

@@ -10,7 +10,7 @@ export const Heading1Styles = styled.h1`
 `;
 
 export const Heading2Style = styled.h2`
-  color: ${stylesVariables.color.grey140};
+  color: ${stylesVariables.color.grey50};
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-variant: normal;
@@ -19,14 +19,14 @@ export const Heading2Style = styled.h2`
   line-height: 57px;
 
   span {
-    color: ${stylesVariables.color.grey90};
+    color: ${stylesVariables.color.grey30};
     font-size: 48px;
     line-height: 57px;
   }
 `;
 
 export const Heading3Styles = styled.h3`
-  color: ${stylesVariables.color.grey140};
+  color: ${stylesVariables.color.grey50};
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-variant: normal;

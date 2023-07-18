@@ -3,7 +3,7 @@ import stylesVariables from "../../constants/styles";
 
 const DescriptionStyles = styled.p`
   font-family: "Open Sans", sans-serif;
-  color: ${stylesVariables.color.grey90};
+  color: ${stylesVariables.color.grey30};
   font-style: normal;
   font-variant: normal;
   font-weight: normal;

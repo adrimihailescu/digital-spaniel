@@ -29,7 +29,7 @@ export const ProjectsSectionComponent = styled.section`
 
       &.slide-right,
       &.slide-left {
-        background-color: ${stylesVariables.color.grey140};
+        background-color: ${stylesVariables.color.grey50};
         color: ${stylesVariables.color.white};
 
         &:hover:not(:disabled) {
@@ -39,8 +39,8 @@ export const ProjectsSectionComponent = styled.section`
         }
 
         &:disabled {
-          background-color: ${stylesVariables.color.grey80};
-          color: ${stylesVariables.color.grey120};
+          background-color: ${stylesVariables.color.grey30};
+          color: ${stylesVariables.color.grey50};
           cursor: not-allowed;
         }
       }
@@ -72,7 +72,7 @@ export const ProjectsCategoryTabs = styled.ul<ProjectsCategoryTabsProps>`
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: ${stylesVariables.color.grey90};
+    background-color: ${stylesVariables.color.grey30};
   }
   &:after {
     transition: all calc(${({ animationSpeed }) => animationSpeed} * 300ms)
@@ -92,7 +92,7 @@ export const ProjectsCategoryTabs = styled.ul<ProjectsCategoryTabsProps>`
       font-size: 20px;
       line-height: 27px;
       letter-spacing: 0px;
-      color: ${stylesVariables.color.grey140};
+      color: ${stylesVariables.color.grey50};
       border: none;
       outline: 0;
       background-color: ${stylesVariables.color.white};
