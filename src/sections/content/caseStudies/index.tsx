@@ -27,7 +27,6 @@ const CaseStudies: FC<CaseStudiesProps> = ({ title, content, items }) => {
         slidesPerView={1.5}
       >
         {Object.keys(items).map((index) => {
-          console.log(index);
           return (
             <SwiperSlide key={index}>
               {<Image {...items[index as any]?.image} />}

@@ -2,6 +2,7 @@ import { HeadingVariant } from "../types/heading";
 import { LayoutItemVariant } from "../types/layout";
 import { LinkVariant } from "../types/link";
 import { WebsiteData } from "../types/websiteData";
+import { ProjectCategories } from "../types/projects";
 
 const data: WebsiteData = {
   navigation: {
@@ -280,24 +281,20 @@ const data: WebsiteData = {
       },
       categories: [
         {
-          id: 1,
           label: "All",
-          value: "all",
+          value: ProjectCategories.all,
         },
         {
-          id: 2,
           label: "Branding",
-          value: "branding",
+          value: ProjectCategories.branding,
         },
         {
-          id: 3,
           label: "Web Design",
-          value: "web-design",
+          value: ProjectCategories.webDesign,
         },
         {
-          id: 3,
           label: "Digital Marketing",
-          value: "digital-marketing",
+          value: ProjectCategories.digitalMarketing,
         },
       ],
       cta: {
@@ -314,7 +311,7 @@ const data: WebsiteData = {
             label: "Full project",
             url: "/ideas",
           },
-          category: "branding",
+          category: ProjectCategories.branding,
           image: {
             alt: "A boot",
             mobile: "/assets/whellies01.jpg",
@@ -329,7 +326,7 @@ const data: WebsiteData = {
             label: "Full project",
             url: "/ideas",
           },
-          category: "branding",
+          category: ProjectCategories.branding,
           image: {
             alt: "Sardine cans",
             mobile: "/assets/whellies01.jpg",
@@ -344,7 +341,7 @@ const data: WebsiteData = {
             label: "Full project",
             url: "/ideas",
           },
-          category: "branding",
+          category: ProjectCategories.branding,
           image: {
             alt: "Smiley faces",
             mobile: "/assets/newspaper.jpg",
@@ -359,7 +356,7 @@ const data: WebsiteData = {
             label: "Full project",
             url: "/ideas",
           },
-          category: "web-design",
+          category: ProjectCategories.webDesign,
           image: {
             alt: "a dashboard",
             mobile: "/assets/dashboard01.jpg",
@@ -374,7 +371,7 @@ const data: WebsiteData = {
             label: "Full project",
             url: "/ideas",
           },
-          category: "web-design",
+          category: ProjectCategories.webDesign,
           image: {
             alt: "a paper",
             mobile: "/assets/newspaper02.jpg",
@@ -389,7 +386,37 @@ const data: WebsiteData = {
             label: "Full project",
             url: "/ideas",
           },
-          category: "digital-marketing",
+          category: ProjectCategories.digitalMarketing,
+          image: {
+            alt: "a paper",
+            mobile: "/assets/newspaper02.jpg",
+            nonMobile: "/assets/newspaper02@2x.jpg",
+          },
+        },
+        {
+          title: "Make ideas happen",
+          content:
+            "A local paper with big ideas needed A sharp new brand to inspire readers.",
+          cta: {
+            label: "Full project",
+            url: "/ideas",
+          },
+          category: ProjectCategories.digitalMarketing,
+          image: {
+            alt: "a paper",
+            mobile: "/assets/newspaper02.jpg",
+            nonMobile: "/assets/newspaper02@2x.jpg",
+          },
+        },
+        {
+          title: "Make ideas happen",
+          content:
+            "A local paper with big ideas needed A sharp new brand to inspire readers.",
+          cta: {
+            label: "Full project",
+            url: "/ideas",
+          },
+          category: ProjectCategories.webDesign,
           image: {
             alt: "a paper",
             mobile: "/assets/newspaper02.jpg",
